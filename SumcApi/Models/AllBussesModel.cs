@@ -7,11 +7,11 @@ namespace SumcApi.Models
 {
     public class AllBussesModel
     {
-        public List<int> Busses { get; set; }
+        public List<BusNamesModel> Busses { get; set; }
 
         public AllBussesModel()
         {
-            this.Busses = new List<int>();
+            this.Busses = new List<BusNamesModel>();
             FillBusses();
         }
 
@@ -31,7 +31,15 @@ namespace SumcApi.Models
                 213, 260, 280, 285, 294, 305, 306, 309, 310, 314, 384, 404, 413
             };
             var list = new List<int>(intArray);
-            this.Busses = list;
+            foreach (var bus in list)
+            {
+                var busName = new BusNamesModel()
+                {
+                    Id = bus,
+                    Name = bus.ToString()
+                };
+                this.Busses.Add(busName);
+            }
         }
     }
 }

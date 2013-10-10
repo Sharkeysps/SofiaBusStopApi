@@ -138,6 +138,7 @@
     <Compile Include="Models\AllBussesModel.cs" />
     <Compile Include="Models\BasicBusAndDirectionModel.cs" />
     <Compile Include="Models\BasicRequestBusStopModel.cs" />
+    <Compile Include="Models\BusNamesModel.cs" />
     <Compile Include="Models\DetailedBusInfoModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
