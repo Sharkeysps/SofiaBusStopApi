@@ -36,7 +36,7 @@ namespace SumcApi.Models
                 var busName = new BusNamesModel()
                 {
                     Id = bus,
-                    Name = bus.ToString()
+                    Name = "Автобус Номер: "+bus.ToString()
                 };
                 this.Busses.Add(busName);
             }
