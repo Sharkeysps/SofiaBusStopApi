@@ -135,6 +135,7 @@
     <Compile Include="Helpers\DistanceAlgorithm.cs" />
     <Compile Include="Helpers\GpsCoordinates.cs" />
     <Compile Include="Helpers\SearchParameters.cs" />
+    <Compile Include="Models\AllBussesModel.cs" />
     <Compile Include="Models\BasicBusAndDirectionModel.cs" />
     <Compile Include="Models\BasicRequestBusStopModel.cs" />
     <Compile Include="Models\DetailedBusInfoModel.cs" />
