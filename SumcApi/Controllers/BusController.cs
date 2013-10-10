@@ -11,9 +11,10 @@ namespace SumcApi.Controllers
     public class BusController : ApiController
     {
         // GET api/bus
-        public IEnumerable<string> Get()
+        public AllBussesModel Get()
         {
-            return new string[] { "value1", "value2" };
+            var allBusses = new AllBussesModel();
+            return allBusses;
         }
 
         //[HttpGet]
